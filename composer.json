@@ -1,5 +1,5 @@
 {
-  "name": "pajerdesign/polish-id-card-validator-number-bundle",
+  "name": "pajerdesign/polish-id-card-number-validator-bundle",
   "type": "symfony-bundle",
   "description": ".",
   "keywords": ["symfony", "validation", "id card", "polish id card"],
