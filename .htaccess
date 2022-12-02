@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+    SetEnvIf Origin ":" IS_CORS
+    Header set Access-Control-Allow-Origin "*" env=IS_CORS
+    Header set Vary Origin 
+
+    Header set Strict-Transport-Security "max-age=31536000 ; includeSubDomains"
+    Header set X-Frame-Options "deny"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
