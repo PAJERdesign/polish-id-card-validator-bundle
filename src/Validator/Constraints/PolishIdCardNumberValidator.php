@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PAJERdesign\PolishIdCardValidatorBundle\Validator\Constraints;
+namespace PAJERdesign\PolishIdCardNumberValidatorBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
