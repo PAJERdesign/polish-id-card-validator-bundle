@@ -92,7 +92,7 @@ class PolishIdCardNumberValidator extends ConstraintValidator
             $sum += $charValues[$value[$i]] * $weights[$i];
         }
 
-        if (($sum % 10) != $value[4]) {
+        if (($sum % 10) != $value[3]) {
             $this->context->buildViolation($constraint->checkSumFailedMessage)
                 ->setCode(PolishIdCardNumber::CHECKSUM_FAILED_ERROR)
                 ->addViolation();
