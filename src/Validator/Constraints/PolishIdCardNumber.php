@@ -37,10 +37,10 @@ class PolishIdCardNumber extends Constraint
         self::INVALID_FORMAT_ERROR => 'INVALID_FORMAT_ERROR',
     ];
 
-    public $checkSumFailedMessage = 'The tax number provided is incorrect';
-    public $tooShortdMessage = 'The tax number provided is too short';
-    public $tooLongdMessage = 'The tax number provided is too long';
-    public $invalidFormatMessage = 'The tax number provided contains not permitted characters';
+    public $checkSumFailedMessage = 'The ID card number provided is incorrect';
+    public $tooShortdMessage = 'The ID card number provided is too short';
+    public $tooLongdMessage = 'The ID card number provided is too long';
+    public $invalidFormatMessage = 'The ID card provided contains not permitted characters';
 
     public function __construct(
         array $options = null,

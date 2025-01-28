@@ -46,7 +46,9 @@ class PolishIdCardNumberValidator extends ConstraintValidator
 
             return;
         }
-        $idCard = 'DBS096102';
+
+        $value = strtoupper($value);
+
         $charValues = [
             '0' => 0,
             '1' => 1,
