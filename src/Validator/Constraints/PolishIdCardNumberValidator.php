@@ -23,14 +23,6 @@ class PolishIdCardNumberValidator extends ConstraintValidator
             return;
         }
 
-        if (!preg_match('/^[a-zA-Z]{3}[0-9]{6}/', $value)) {
-            $this->context->buildViolation($constraint->invalidFormatMessage)
-                ->setCode(PolishIdCardNumber::INVALID_FORMAT_ERROR)
-                ->addViolation();
-
-            return;
-        }
-
         if (strlen($value) < 9) {
             $this->context->buildViolation($constraint->tooShortdMessage)
                 ->setCode(PolishIdCardNumber::TOO_SHORT_ERROR)
@@ -42,6 +34,14 @@ class PolishIdCardNumberValidator extends ConstraintValidator
         if (strlen($value) > 9) {
             $this->context->buildViolation($constraint->tooLongdMessage)
                 ->setCode(PolishIdCardNumber::TOO_LONG_ERROR)
+                ->addViolation();
+
+            return;
+        }
+
+        if (!preg_match('/^[a-zA-Z]{3}[0-9]{6}/', $value)) {
+            $this->context->buildViolation($constraint->invalidFormatMessage)
+                ->setCode(PolishIdCardNumber::INVALID_FORMAT_ERROR)
                 ->addViolation();
 
             return;

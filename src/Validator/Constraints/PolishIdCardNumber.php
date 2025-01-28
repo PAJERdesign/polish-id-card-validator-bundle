@@ -40,7 +40,7 @@ class PolishIdCardNumber extends Constraint
     public $checkSumFailedMessage = 'The ID card number provided is incorrect';
     public $tooShortdMessage = 'The ID card number provided is too short';
     public $tooLongdMessage = 'The ID card number provided is too long';
-    public $invalidFormatMessage = 'The ID card provided contains not permitted characters';
+    public $invalidFormatMessage = 'The ID card number provided contains not permitted characters';
 
     public function __construct(
         array $options = null,
